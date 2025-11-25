@@ -120,7 +120,7 @@ player.PlayerGui.HUD.DescendantAdded:Connect(function(v)
         isFishing = true
 
         GuiService.SelectedObject = FishButton
-        for i = 1, 15 do
+        for i = 1, 20 do
             if not getgenv().FishingEnabled then break end
             VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Return, false, game)
             VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Return, false, game)
@@ -174,3 +174,4 @@ task.spawn(function()
         end
     end
 end)
+
